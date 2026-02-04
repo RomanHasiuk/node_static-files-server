@@ -53,7 +53,7 @@ function createServer() {
 
       if (!filePath.startsWith(publicDir + path.sep)) {
         res.statusCode = 400;
-        res.setHeader('Content-Type', 'text/plain');
+        res.setHeader('Content-Type', 'text/html');
         res.end('Bad Request');
 
         return;
